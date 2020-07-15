@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Perfil"
+    android:orientation="vertical"
+    android:background="#252525">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:orientation="vertical"
+            android:background="@color/backgroundEdit">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#fff"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="-80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NomeCliente"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ednaldo Pereira"
+                android:textSize="70px"
+                android:textColor="@color/TextDefault"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#505050"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/EmailCliente"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ednaldo.chance@yahoo.com.br"
+                android:textSize="60px"
+                android:textColor="@color/TextDefault"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#505050"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/CelularCliente"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="55(11)96963-8980"
+                android:textSize="60px"
+                android:textColor="@color/TextDefault"/>
+            <LinearLayout
+                android:layout_marginTop="98dp"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#fff"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/alterarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alterar senha"
+                android:textColor="#FFF"
+                android:background="#303030"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#fff"
+                android:orientation="vertical">
+            </LinearLayout>
+            <Button
+                android:id="@+id/sair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textColor="#FFF"
+                android:background="#303030"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#fff"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchPage"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#252525"
+            android:drawableLeft="@drawable/lupa"
+            android:padding="55dp"
+            />
+        <Button
+            android:id="@+id/mapPage"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#252525"
+            android:padding="55dp"
+            android:drawableLeft="@drawable/local"/>
+        <Button
+            android:id="@+id/profilePage"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#202020"
+            android:padding="55dp"
+            android:drawableLeft="@drawable/perfil_light"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Register"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:src="@drawable/background_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:paddingRight="30px"/>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="300px">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="Login:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:gravity="center"
+            android:padding="15px"
+            android:textColorHint="@color/background" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="E-mail:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:gravity="center"
+            android:padding="15px"
+            android:textColorHint="@color/background" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="Senha:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:gravity="center"
+            android:padding="15px"
+            android:textColorHint="@color/background" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="Confirmar senha:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:gravity="center"
+            android:padding="15px"
+            android:textColorHint="@color/background" />
+
+            <Button
+                android:id="@+id/edRegistrar"
+                android:layout_marginTop="125dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textColor="#FFF"
+                android:background="@drawable/button"/>
+
+    </LinearLayout>
+</RelativeLayout>

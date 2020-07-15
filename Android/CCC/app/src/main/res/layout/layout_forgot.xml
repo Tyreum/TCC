@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Forgot"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:src="@drawable/background_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"/>
+
+    <LinearLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="250px">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="Será enviado um código de confirmação para o email enviado"
+            android:textSize="50px"
+            android:textColor="@color/TextDefault"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="E-mail:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:gravity="center"
+            android:padding="15px"
+            android:textColorHint="@color/background" />
+
+        <Button
+            android:id="@+id/sendEmail"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:textColor="#FFF"
+            android:background="@drawable/button"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:text="Código:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+            android:gravity="center"
+            android:padding="15px"
+            android:textColorHint="@color/background" />
+
+        <Button
+            android:id="@+id/confirmCode"
+            android:layout_marginTop="190dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textColor="#FFF"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
