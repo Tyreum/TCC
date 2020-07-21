@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Endereço, moeda..."
-            android:textColorHint="#999"/>
+            android:textColorHint="#999"
+            android:drawableRight="@drawable/mini_lupa_light" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +29,6 @@
             android:orientation="horizontal">
 
             <Button
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -36,9 +36,11 @@
                 android:background="#252525"
                 android:drawableLeft="@drawable/sortup"
                 android:drawablePadding="10dp"
-                android:text="crescente"
+                android:text="bla"
                 android:textAlignment="textStart"
-                android:textColor="#999" />
+                android:textColor="#999"
+                android:layout_gravity="start"
+                style="@style/MyButtonStyle"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,15 +54,25 @@
                 android:background="#252525"
                 android:drawableLeft="@drawable/sortdown"
                 android:drawablePadding="10dp"
-                android:text="decrescente"
+                android:text="blu"
                 android:textAlignment="textStart"
-                android:textColor="#999" />
+                android:textColor="#999"
+                android:layout_gravity="start"
+                style="@style/MyButtonStyle"/>
+
         </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="472dp"></LinearLayout>
+        android:layout_height="472dp">
+        <ListView
+            android:id="@+id/search_cambio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2px"

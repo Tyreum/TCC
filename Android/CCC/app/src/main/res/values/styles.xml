@@ -7,4 +7,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless"></style>
+
+
 </resources>

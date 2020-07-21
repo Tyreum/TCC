@@ -5,12 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Activity_Search extends AppCompatActivity {
     private Button mapPage;
     private Button profilePage;
+
+    ListView search_cambio;
+    ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +40,19 @@ public class Activity_Search extends AppCompatActivity {
                 openActivity_Perfil();
             }
         });
+
+        search_cambio = (ListView) findViewById(R.id.search_cambio);
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.addAll(Arrays.asList(getResources().getStringArray(R.array.casas_cambio)));
+
+        adapter = new ArrayAdapter<String>(
+          Activity_Search.this,
+          android.R.layout.simple_list_item_1,
+          arrayList
+        );
+
+        search_cambio.setAdapter(adapter);
     }
     public void openActivity_Maps(){
         Intent intent = new Intent(this, Activity_Maps.class);

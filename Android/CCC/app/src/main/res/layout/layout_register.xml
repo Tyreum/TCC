@@ -25,7 +25,7 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@color/backgroundEdit"
             android:gravity="center"
             android:padding="15px"
@@ -42,7 +42,7 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@color/backgroundEdit"
             android:gravity="center"
             android:padding="15px"
@@ -57,13 +57,25 @@
             android:textSize="80px"
             android:textColor="@color/TextDefault" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/backgroundEdit"
-            android:gravity="center"
-            android:padding="15px"
-            android:textColorHint="@color/background" />
+            app:passwordToggleEnabled="true"
+            tools:ignore="MissingContraints">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:padding="15px"
+                android:layout_gravity="center"
+                android:ems="5"
+                android:inputType="textPassword"
+                android:textColor="@color/TextDefault"
+                android:textColorHint="@color/TextDefault"
+                android:background="@color/backgroundEdit"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_marginTop="10dp"
@@ -74,13 +86,25 @@
             android:textSize="80px"
             android:textColor="@color/TextDefault" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/backgroundEdit"
-            android:gravity="center"
-            android:padding="15px"
-            android:textColorHint="@color/background" />
+            app:passwordToggleEnabled="true"
+            tools:ignore="MissingContraints">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:padding="15px"
+                android:layout_gravity="center"
+                android:ems="5"
+                android:inputType="textPassword"
+                android:textColorHint="@color/TextDefault"
+                android:textColor="@color/TextDefault"
+                android:background="@color/backgroundEdit"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/edRegistrar"

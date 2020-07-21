@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">CCC</string>
+    <string-array name="casas_cambio">
+        <item>Shoptur</item>
+        <item>Sagitur</item>
+        <item>Casa Câmbio</item>
+        <item>Exchange Cambio</item>
+        <item>bla</item>
+        <item>asdasdasd</item>
+        <item>Exchange Range</item>
+        <item>Cambiere</item>
+        <item>Canbee</item>
+        <item>Davi</item>
+        <item>Kenji</item>
+        <item>Edu</item>
+        <item>Marcio</item>
+        <item>Bruno</item>
+        <item>Elemento X</item>
+    </string-array>
 </resources>
