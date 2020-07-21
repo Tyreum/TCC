@@ -6,22 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Register"
     android:background="@color/background">
-
-    <ImageView
-        android:layout_width="200sp"
-        android:layout_height="50sp"
-        android:src="@drawable/background_splash"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"
-        android:paddingRight="30px"/>
-
     <LinearLayout
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="300px">
+        android:layout_marginTop="60px">
 
         <TextView
             android:layout_marginTop="10dp"

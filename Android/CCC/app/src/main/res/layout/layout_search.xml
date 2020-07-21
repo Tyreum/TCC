@@ -26,16 +26,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
+
             <Button
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:layout_weight="5"
                 android:background="#252525"
-                android:drawableLeft="@drawable/filter"
+                android:drawableLeft="@drawable/sortup"
                 android:drawablePadding="10dp"
-                android:text="filtro"
+                android:text="crescente"
                 android:textAlignment="textStart"
                 android:textColor="#999" />
 
@@ -46,12 +47,12 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="5"
                 android:background="#252525"
-                android:drawableLeft="@drawable/sort"
+                android:drawableLeft="@drawable/sortdown"
                 android:drawablePadding="10dp"
-                android:text="ordenar"
+                android:text="decrescente"
                 android:textAlignment="textStart"
                 android:textColor="#999" />
         </LinearLayout>
