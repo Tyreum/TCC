@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ccc">
+    package="com.example.c3admin">
 
     <application
         android:allowBackup="true"
@@ -11,9 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activity_Casa"></activity>
         <activity android:name=".Activity_Change" />
-        <activity android:name=".Activity_Search" />
         <activity android:name=".Activity_Perfil" />
-        <activity android:name=".Activity_Maps" />
         <activity android:name=".Activity_Forgot" />
         <activity android:name=".Activity_Register" />
         <activity android:name=".Activity_Login">

@@ -64,20 +64,16 @@
             android:gravity="center"
             android:padding="15px"
             android:textColorHint="@color/background" />
+
+        <Button
+            android:id="@+id/confirmCode"
+            android:layout_marginTop="190dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textColor="#FFF"
+            android:background="@drawable/button"/>
+
     </LinearLayout>
-    <View
-        android:layout_marginTop="609dp"
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#fff"
-        android:orientation="vertical">
-    </View>
-    <Button
-        android:layout_marginTop="610dp"
-        android:id="@+id/confirmCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#303030"
-        android:text="Confirmar"
-        android:textColor="#FFF" />
+
 </RelativeLayout>

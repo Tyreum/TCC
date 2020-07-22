@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Perfil"
+    android:orientation="vertical"
+    android:background="#252525">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:orientation="vertical"
+            android:background="@color/backgroundEdit">
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#fff"
+            android:orientation="vertical">
+        </View>
+        <ImageView
+            android:layout_marginLeft="120dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/circle"
+            android:layout_marginTop="-80dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/casa"
+            android:layout_marginTop="-150dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/NomeCasa"
+                android:gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome Casa"
+                android:textSize="70px"
+                android:textColor="@color/TextDefault"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#505050"
+                android:orientation="vertical">
+            </View>
+            <TextView
+                android:id="@+id/Moedas"
+                android:gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dolar, Euro, Libra..."
+                android:textSize="60px"
+                android:textColor="@color/TextDefault"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#505050"
+                android:orientation="vertical">
+            </View>
+
+            <TextView
+                android:id="@+id/ContatoCasa"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contato: 55(11)96963-8980"
+                android:textSize="60px"
+                android:textColor="@color/TextDefault"
+                android:gravity="center_horizontal" />
+
+            <View
+                android:layout_marginTop="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#fff"
+                android:orientation="vertical">
+            </View>
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#303030"
+                android:text="Voltar"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

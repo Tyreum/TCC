@@ -111,16 +111,20 @@
                 android:background="@color/backgroundEdit"/>
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/confirmSenha"
-            android:layout_marginTop="200dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Confirmar"
-            android:textColor="#FFF"
-            android:background="@drawable/button"/>
-
     </LinearLayout>
-
+    <View
+        android:layout_marginTop="609dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#fff"
+        android:orientation="vertical">
+    </View>
+    <Button
+        android:layout_marginTop="610dp"
+        android:id="@+id/confirmSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#303030"
+        android:text="Confirmar"
+        android:textColor="#FFF" />
 </RelativeLayout>

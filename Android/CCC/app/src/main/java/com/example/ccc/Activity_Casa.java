@@ -8,25 +8,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Activity_Register extends AppCompatActivity {
-    private Button edRegistrar;
+public class Activity_Casa extends AppCompatActivity {
+    private Button btnVoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_register);
+        setContentView(R.layout.layout_casa);
 
-        edRegistrar = (Button) findViewById(R.id.btnRegister);
-        edRegistrar.setOnClickListener(new View.OnClickListener() {
+        btnVoltar = (Button) findViewById(R.id.btnVoltar);
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity_Login();
+                openActivity_Search();
             }
         });
     }
 
-    public void openActivity_Login() {
-        Intent intent = new Intent(this, Activity_Login.class);
+    public void openActivity_Search() {
+        Intent intent = new Intent(this, Activity_Search.class);
         startActivity(intent);
     }
 }

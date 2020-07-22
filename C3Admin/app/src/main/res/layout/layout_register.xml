@@ -105,21 +105,15 @@
                 android:background="@color/backgroundEdit"/>
 
         </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
 
-    <View
-        android:layout_marginTop="609dp"
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#fff"
-        android:orientation="vertical">
-    </View>
-    <Button
-        android:layout_marginTop="610dp"
-        android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#303030"
-        android:text="Registrar"
-        android:textColor="#FFF" />
+            <Button
+                android:id="@+id/edRegistrar"
+                android:layout_marginTop="125dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textColor="#FFF"
+                android:background="@drawable/button"/>
+
+    </LinearLayout>
 </RelativeLayout>
