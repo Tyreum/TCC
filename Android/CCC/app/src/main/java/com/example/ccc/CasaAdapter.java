@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class CasaAdapter extends ArrayAdapter<Casa> {
     private final Context context;
@@ -24,12 +25,21 @@ public class CasaAdapter extends ArrayAdapter<Casa> {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.casas, parent, false);
+
+        //Nome da casa
         TextView nomecasa = (TextView) rowView.findViewById(R.id.nomecasa);
-        TextView moedascasa = (TextView) rowView.findViewById(R.id.moedascasa);
-        ImageView imagemcasa = (ImageView) rowView.findViewById(R.id.imagemcasa);
         nomecasa.setText(elementos.get(position).getNomecasa());
+
+        //Moeda da casa
+        TextView moedascasa = (TextView) rowView.findViewById(R.id.moedascasa);
         moedascasa.setText(elementos.get(position).getMoedascasa());
+
+        //Imagem da casa
+        ImageView imagemcasa = (ImageView) rowView.findViewById(R.id.imagemcasa);
         imagemcasa.setImageResource(elementos.get(position).getImagemcasa());
+
         return rowView;
     }
+
+
 }

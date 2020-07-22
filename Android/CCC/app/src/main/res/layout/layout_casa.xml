@@ -30,10 +30,14 @@
             android:layout_height="170dp"
             android:src="@drawable/circle"
             android:layout_marginTop="-80dp"/>
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="455dp"
+            android:layout_height="434dp"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
             <TextView
                 android:id="@+id/nomecasa"
                 android:gravity="center_horizontal"
@@ -49,15 +53,32 @@
                 android:background="#505050"
                 android:orientation="vertical">
             </View>
-            <TextView
-                android:id="@+id/moedascasa"
-                android:gravity="center_horizontal"
-                android:layout_margin="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dolar, Euro, Libra..."
-                android:textSize="60px"
-                android:textColor="@color/TextDefault"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="145dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="60px"
+                        android:text="Dolar:"
+                        android:textColor="@color/TextDefault"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:id="@+id/moedascasa"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4,82"
+                        android:textSize="60px"
+                        android:textColor="@color/TextDefault"/>
+
+                </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2px"
@@ -81,21 +102,30 @@
                 android:background="#505050"
                 android:orientation="vertical">
             </View>
+            <TextView
+                android:id="@+id/enderecocasa"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contato: 55(11)96963-8980"
+                android:textSize="60px"
+                android:textColor="@color/TextDefault"
+                android:gravity="center_horizontal" />
             <View
-                android:layout_marginTop="193dp"
                 android:layout_width="match_parent"
                 android:layout_height="2px"
-                android:background="#c4c4c4"
+                android:background="#505050"
                 android:orientation="vertical">
             </View>
+            </LinearLayout>
             <Button
-
                 android:id="@+id/btnVoltar"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="#303030"
                 android:text="Voltar"
-                android:textColor="#FFF" />
-        </LinearLayout>
+                android:textColor="#FFF"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
