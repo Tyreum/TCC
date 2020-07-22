@@ -51,7 +51,26 @@ public class Activity_Search extends AppCompatActivity {
         );
 
         search_cambio.setAdapter(adapter);
+
+        ListView lista = (ListView) findViewById(R.id.search_cambio);
+        ArrayList<Casa> casas = adicionarCasas();
+        ArrayAdapter adapter = new CasaAdapter(this, casas);
+        lista.setAdapter(adapter);
     }
+
+    private ArrayList<Casa> adicionarCasas() {
+        ArrayList<Casa> casas = new ArrayList<Casa>();
+        Casa e = new Casa("Ponto do Câmbio", "Dolar 5.30, Euro 6.20", R.drawable.pontodocambio);
+                casas.add(e);
+        e = new Casa("Ponto do Câmbio", "Dolar 5.30, Euro 6.20", R.drawable.pontodocambio);
+                casas.add(e);
+        e = new Casa("Ponto do Câmbio", "Dolar 5.30, Euro 6.20", R.drawable.pontodocambio);
+                casas.add(e);
+        e = new Casa("Ponto do Câmbio", "Dolar 5.30, Euro 6.20", R.drawable.pontodocambio);
+                casas.add(e);
+        return casas;
+    }
+
     public void openActivity_Maps(){
         Intent intent = new Intent(this, Activity_Maps.class);
         startActivity(intent);
