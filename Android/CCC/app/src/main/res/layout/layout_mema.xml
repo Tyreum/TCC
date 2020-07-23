@@ -27,13 +27,13 @@
             android:textColor="#999"
             android:layout_gravity="start" />
         <Button
-            android:id="@+id/sortMeMa"
+            android:id="@+id/sortMaMe"
             android:paddingLeft="70dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#252525"
-            android:drawableLeft="@drawable/sortdown"
+            android:background="#202020"
+            android:drawableLeft="@drawable/sortup"
             android:text="$-$$$"
             android:textAlignment="textStart"
             android:textColor="#999"

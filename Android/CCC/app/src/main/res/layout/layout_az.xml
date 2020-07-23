@@ -7,44 +7,44 @@
     tools:context=".Activity_Maps"
     android:orientation="vertical"
     android:background="#252525">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#252525"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/sortAZ"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:paddingLeft="70dp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="60dp"
             android:background="#252525"
-            android:drawableLeft="@drawable/sortup"
-            android:text="A-Z"
-            android:textAlignment="textStart"
-            android:textColor="#999"
-            android:layout_gravity="start" />
-        <Button
-            android:id="@+id/sortMeMa"
-            android:paddingLeft="70dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#252525"
-            android:drawableLeft="@drawable/sortdown"
-            android:text="$-$$$"
-            android:textAlignment="textStart"
-            android:textColor="#999"
-            android:layout_gravity="start" />
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sortZA"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#202020"
+                android:drawableLeft="@drawable/sortup"
+                android:text="A-Z"
+                android:textAlignment="textStart"
+                android:textColor="#999"
+                android:layout_gravity="start" />
+            <Button
+                android:id="@+id/sortMeMa"
+                android:paddingLeft="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#252525"
+                android:drawableLeft="@drawable/sortdown"
+                android:text="$-$$$"
+                android:textAlignment="textStart"
+                android:textColor="#999"
+                android:layout_gravity="start" />
 
-    </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#fff"
-        android:orientation="vertical"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#fff"
+            android:orientation="vertical"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="540dp">
