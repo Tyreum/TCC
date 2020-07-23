@@ -71,7 +71,7 @@ public class Activity_Login extends AppCompatActivity {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-            Intent intent = new Intent(Activity_Login.this, Activity_Maps.class);
+            Intent intent = new Intent(Activity_Login.this, Activity_Search.class);
             startActivity(intent);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -81,7 +81,7 @@ public class Activity_Login extends AppCompatActivity {
         }
     }
     public void openActivity_Maps(){
-        Intent intent = new Intent(this, Activity_Maps.class);
+        Intent intent = new Intent(this, Activity_Search.class);
         startActivity(intent);
     }
 

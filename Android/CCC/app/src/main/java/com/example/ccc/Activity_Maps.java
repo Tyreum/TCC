@@ -2,6 +2,7 @@ package com.example.ccc;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -47,6 +49,9 @@ import java.util.List;
  */
 public class Activity_Maps extends AppCompatActivity
         implements OnMapReadyCallback {
+    //BUTTONS
+    private Button profilePage;
+    private Button searchPage;
 
     //Localização dos marcadores
     private static final LatLng PontodoCambio = new LatLng(-23.6610184,-46.6950217);
@@ -225,7 +230,7 @@ public class Activity_Maps extends AppCompatActivity
     public void onMapReady(GoogleMap map) {
         this.map = map;
 
-
+        // MARKERS
         mPontodoCambio = map.addMarker(new MarkerOptions()
                 .position(PontodoCambio)
                 .title("Ponto do Câmbio")
