@@ -119,7 +119,7 @@ public class Activity_Search extends AppCompatActivity {
         casas.add(e);
         e = new Casa("Treviso - Money Exchange", "5,30", R.drawable.treviso, "+55 (11) 51822420", "Av. Dr. Chucri Zaidan, 902 - 124/125 - Vila Cordeiro, São Paulo - SP, 04795-100");
         casas.add(e);
-        e = new Casa("Cotação Câmbio Exchange", "5,30", R.drawable.cotacao, "+55 3003-2180", "Av. Giovanni Gronchi, 5819 Piso 1 - Loja 218 - Vila Andrade, São Paulo - SP, 05724-003\n");
+        e = new Casa("Cotação Câmbio Exchange", "5,30", R.drawable.cotacao, "+55 3003-2180", "Av. Giovanni Gronchi, 5819 Piso 1 - Loja 218 - Vila Andrade, São Paulo - SP, 05724-003");
         casas.add(e);
         e = new Casa("Get Money Exchange Houses", "5,30", R.drawable.getmoney, "+55 (11) 3018-1880", "Gendai - Piso da Praça de Alimentação ao lado do, R. Treze de Maio, 1947 - Bela Vista, São Paulo - SP, 01327-001");
         casas.add(e);

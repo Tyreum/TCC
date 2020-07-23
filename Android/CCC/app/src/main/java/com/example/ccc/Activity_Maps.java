@@ -1,5 +1,6 @@
 package com.example.ccc;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -46,6 +47,64 @@ import java.util.List;
  */
 public class Activity_Maps extends AppCompatActivity
         implements OnMapReadyCallback {
+
+    //Localização dos marcadores
+    private static final LatLng PontodoCambio = new LatLng(-23.6610184,-46.6950217);
+    private Marker mPontodoCambio;
+
+    private static final LatLng Shoptur = new LatLng(-23.6785695,-46.7007849);
+    private Marker mShoptur;
+
+    private static final LatLng Cotacao = new LatLng(-23.6310282,-46.7385377);
+    private Marker mCotacao;
+
+    private static final LatLng Travelex = new LatLng(-23.676352, -46.677803);
+    private Marker mTravelex;
+
+    private static final LatLng Orion = new LatLng(-23.6908763,-46.6251869);
+    private Marker mOrion;
+
+    private static final LatLng Cambiar = new LatLng(-23.625516,-46.7044951);
+    private Marker mCambiar;
+
+    private static final LatLng Sagitur = new LatLng(-23.6231169,-46.7007961);
+    private Marker mSagitur;
+
+    private static final LatLng Treviso = new LatLng(-23.6214215,-46.7016544);
+    private Marker mTreviso;
+
+    private static final LatLng Exchange = new LatLng(-23.6317456,-46.7383266);
+    private Marker mExchange;
+
+    private static final LatLng GetMoney = new LatLng(-23.5707821,-46.6455785);
+    private Marker mGetMoney;
+
+    private static final LatLng PortoTurismo = new LatLng(-23.6074814,-46.659183);
+    private Marker mPortoTurismo;
+
+    private static final LatLng Forex = new LatLng(-23.6045241,-46.6727416);
+    private Marker mForex;
+
+    private static final LatLng Confidence = new LatLng(-23.590703,-46.6922757);
+    private Marker mConfidence;
+
+    private static final LatLng Providence = new LatLng(-23.5912009,-46.8313561);
+    private Marker mProvidence;
+
+    private static final LatLng Paulistano = new LatLng(-23.5805639,-46.6864889);
+    private Marker mPaulistano;
+
+    private static final LatLng GetMoney2 = new LatLng(-23.6101127,-46.6686944);
+    private Marker mGetMoney2;
+
+    private static final LatLng TOP = new LatLng(-23.5655208,-46.6529341);
+    private Marker mTOP;
+
+    private static final LatLng PRIMECASH = new LatLng(-23.55488,-46.6382707);
+    private Marker mPRIMECASH;
+
+    private static final LatLng Marzo = new LatLng(-23.5343855,-46.6594854);
+    private Marker mMarzo;
 
     private static final String TAG = Activity_Maps.class.getSimpleName();
     private GoogleMap map;
@@ -165,6 +224,122 @@ public class Activity_Maps extends AppCompatActivity
     @Override
     public void onMapReady(GoogleMap map) {
         this.map = map;
+
+
+        mPontodoCambio = map.addMarker(new MarkerOptions()
+                .position(PontodoCambio)
+                .title("Ponto do Câmbio")
+                .snippet(""));
+        mPontodoCambio.setTag(0);
+
+        mShoptur = map.addMarker(new MarkerOptions()
+                .position(Shoptur)
+                .title("Shoptur (Casa de Câmbio)")
+                .snippet(""));
+        mShoptur.setTag(0);
+
+        mCotacao = map.addMarker(new MarkerOptions()
+                .position(Cotacao)
+                .title("Cotação Câmbio")
+                .snippet(""));
+        mCotacao.setTag(0);
+
+        mTravelex = map.addMarker(new MarkerOptions()
+                .position(Travelex)
+                .title("Travelex Confidence - Câmbio")
+                .snippet(""));
+        mTravelex.setTag(0);
+
+        mOrion = map.addMarker(new MarkerOptions()
+                .position(Orion)
+                .title("Orion Câmbio - Unidade Daycoval Diadema - Shopping Praça da Moça")
+                .snippet(""));
+        mOrion.setTag(0);
+
+        mCambiar = map.addMarker(new MarkerOptions()
+                .position(Cambiar)
+                .title("Cambiar - Online Exchange Search")
+                .snippet(""));
+        mCambiar.setTag(0);
+
+        mSagitur = map.addMarker(new MarkerOptions()
+                .position(Sagitur)
+                .title("Sagitur Casa de Câmbio")
+                .snippet(""));
+        mSagitur.setTag(0);
+
+        mTreviso = map.addMarker(new MarkerOptions()
+                .position(Treviso)
+                .title("Treviso - Money Exchange")
+                .snippet(""));
+        mTreviso.setTag(0);
+
+        mExchange = map.addMarker(new MarkerOptions()
+                .position(Exchange)
+                .title("Cotação Câmbio Exchange")
+                .snippet(""));
+        mExchange.setTag(0);
+
+        mGetMoney = map.addMarker(new MarkerOptions()
+                .position(GetMoney)
+                .title("Get Money Exchange Houses")
+                .snippet(""));
+        mGetMoney.setTag(0);
+
+        mPortoTurismo = map.addMarker(new MarkerOptions()
+                .position(PortoTurismo)
+                .title("Porto Turismo - Casa de Câmbio")
+                .snippet(""));
+        mPortoTurismo.setTag(0);
+
+        mForex = map.addMarker(new MarkerOptions()
+                .position(Forex)
+                .title("Forex Done - Casa de Câmbio")
+                .snippet(""));
+        mForex.setTag(0);
+
+        mConfidence = map.addMarker(new MarkerOptions()
+                .position(Confidence)
+                .title("Confidence Câmbio")
+                .snippet(""));
+        mConfidence.setTag(0);
+
+        mProvidence = map.addMarker(new MarkerOptions()
+                .position(Providence)
+                .title("Providence Exchange Casa de Câmbio")
+                .snippet(""));
+        mProvidence.setTag(0);
+
+        mPaulistano = map.addMarker(new MarkerOptions()
+                .position(Paulistano)
+                .title("Câmbio Paulistano | Casa de Câmbio em São Paul")
+                .snippet(""));
+        mPaulistano.setTag(0);
+
+        mGetMoney2 = map.addMarker(new MarkerOptions()
+                .position(GetMoney2)
+                .title("Get Money Exchange Houses - Shopping Ibirapuera")
+                .snippet(""));
+        mGetMoney2.setTag(0);
+
+        mTOP = map.addMarker(new MarkerOptions()
+                .position(TOP)
+                .title("Casa de Câmbio TOP DayPay Western Union")
+                .snippet(""));
+        mTOP.setTag(0);
+
+        mPRIMECASH = map.addMarker(new MarkerOptions()
+                .position(PRIMECASH)
+                .title("Money Exchange - PRIMECASH")
+                .snippet(""));
+        mPRIMECASH.setTag(0);
+
+        mMarzo = map.addMarker(new MarkerOptions()
+                .position(Marzo)
+                .title("Casa de Câmbio Marzo Exchange")
+                .snippet(""));
+        mMarzo.setTag(0);
+
 
         // [START_EXCLUDE]
         // [START map_current_place_set_info_window_adapter]
