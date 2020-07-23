@@ -101,8 +101,8 @@ public class Activity_Search extends AppCompatActivity {
                 openActivity_Perfil();
             }
         });
-        sortZA = (Button) findViewById(R.id.sortZA);
-        sortZA.setOnClickListener(new View.OnClickListener() {
+        sortAZ = (Button) findViewById(R.id.sortAZ);
+        sortAZ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity_AZ();
@@ -205,7 +205,7 @@ public class Activity_Search extends AppCompatActivity {
         startActivity(intent);
     }
     public void openActivity_AZ(){
-        Intent intent = new Intent(this, Activity_ZA.class);
+        Intent intent = new Intent(this, Activity_AZ.class);
         startActivity(intent);
     }
     public void openActivity_MeMa(){

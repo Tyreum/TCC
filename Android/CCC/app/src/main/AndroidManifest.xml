@@ -38,7 +38,13 @@
             android:label="@string/title_activity__maps" />
         <activity android:name=".Activity_Casa" />
         <activity android:name=".Activity_Change" />
-        <activity android:name=".Activity_Search" />
+        <activity android:name=".Activity_Search" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Activity_Perfil" />
         <activity android:name=".Activity_Forgot" />
         <activity android:name=".Activity_Register" />

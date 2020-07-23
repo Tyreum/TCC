@@ -44,6 +44,8 @@ import com.google.android.libraries.places.api.net.PlacesClient;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.example.ccc.R.id.profilePage;
+
 /**
  * An activity that displays a map showing the place at the device's current location.
  */
@@ -149,6 +151,13 @@ public class Activity_Maps extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        profilePage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityProfile();
+            }
+        });
 
         // [START_EXCLUDE silent]
         // [START maps_current_place_on_create_save_instance_state]
@@ -613,4 +622,9 @@ public class Activity_Maps extends AppCompatActivity
         }
     }
     // [END maps_current_place_update_location_ui]
+
+    public void openActivityProfile(){
+        Intent intent = new Intent(this, Activity_Perfil.class);
+        startActivity(intent);
+    }
 }
