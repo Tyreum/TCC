@@ -26,6 +26,7 @@
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:src="@drawable/perfil"
@@ -36,14 +37,14 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/NomeCliente"
-                android:textAlignment="center"
+                android:id="@+id/txtName"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ednaldo Pereira"
                 android:textSize="70px"
-                android:textColor="@color/TextDefault"/>
+                android:textColor="@color/TextDefault"
+                android:gravity="center_horizontal" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="2px"
@@ -52,52 +53,36 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/EmailCliente"
-                android:textAlignment="center"
+                android:id="@+id/txtEmail"
                 android:layout_margin="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ednaldo.chance@yahoo.com.br"
                 android:textSize="60px"
-                android:textColor="@color/TextDefault"/>
-            <LinearLayout
+                android:textColor="@color/TextDefault"
+                android:gravity="center_horizontal" />
+            <View
                 android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:background="#505050"
                 android:orientation="vertical">
-            </LinearLayout>
-
+            </View>
             <TextView
-                android:id="@+id/CelularCliente"
-                android:textAlignment="center"
+                android:id="@+id/txtID"
                 android:layout_margin="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="55(11)96963-8980"
+                android:text="ID"
                 android:textSize="60px"
-                android:textColor="@color/TextDefault"/>
-            <LinearLayout
-                android:layout_marginTop="98dp"
+                android:textColor="@color/TextDefault"
+                android:gravity="center_horizontal" />
+            <View
+                android:layout_marginTop="147dp"
                 android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:background="#fff"
                 android:orientation="vertical">
-            </LinearLayout>
-
-            <Button
-
-                android:id="@+id/alterarSenha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alterar senha"
-                android:textColor="#FFF"
-                android:background="#303030"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="2px"
-                android:background="#fff"
-                android:orientation="vertical">
-            </LinearLayout>
+            </View>
             <Button
                 android:id="@+id/sair"
                 android:layout_width="match_parent"

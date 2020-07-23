@@ -76,7 +76,7 @@ public class Activity_Search extends AppCompatActivity {
         );
 
         search_cambio.setAdapter(adapter);
-        
+
 
         ListView lista = (ListView) findViewById(R.id.search_cambio);
         final ArrayList<Casa> casas = adicionarCasas();
