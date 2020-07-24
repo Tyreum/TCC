@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Maps"
+    tools:context=".Activity_ZA"
     android:orientation="vertical"
     android:background="#252525">
     <LinearLayout

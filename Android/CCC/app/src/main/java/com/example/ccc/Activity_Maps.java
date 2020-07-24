@@ -1,8 +1,6 @@
 package com.example.ccc;
 
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -11,7 +9,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -44,16 +41,11 @@ import com.google.android.libraries.places.api.net.PlacesClient;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.example.ccc.R.id.profilePage;
-
 /**
  * An activity that displays a map showing the place at the device's current location.
  */
 public class Activity_Maps extends AppCompatActivity
         implements OnMapReadyCallback {
-    //BUTTONS
-    private Button profilePage;
-    private Button searchPage;
 
     //Localização dos marcadores
     private static final LatLng PontodoCambio = new LatLng(-23.6610184,-46.6950217);
@@ -152,13 +144,6 @@ public class Activity_Maps extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        profilePage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityProfile();
-            }
-        });
-
         // [START_EXCLUDE silent]
         // [START maps_current_place_on_create_save_instance_state]
         // Retrieve location and camera position from saved instance state.
@@ -239,7 +224,6 @@ public class Activity_Maps extends AppCompatActivity
     public void onMapReady(GoogleMap map) {
         this.map = map;
 
-        // MARKERS
         mPontodoCambio = map.addMarker(new MarkerOptions()
                 .position(PontodoCambio)
                 .title("Ponto do Câmbio")
@@ -353,7 +337,6 @@ public class Activity_Maps extends AppCompatActivity
                 .title("Casa de Câmbio Marzo Exchange")
                 .snippet(""));
         mMarzo.setTag(0);
-
 
         // [START_EXCLUDE]
         // [START map_current_place_set_info_window_adapter]
@@ -622,9 +605,4 @@ public class Activity_Maps extends AppCompatActivity
         }
     }
     // [END maps_current_place_update_location_ui]
-
-    public void openActivityProfile(){
-        Intent intent = new Intent(this, Activity_Perfil.class);
-        startActivity(intent);
-    }
 }
